@@ -330,10 +330,12 @@ The distance between point A and B is `5`!
 
 A Vector consists of Magnitude and Direction. By eliminating the Magnitude of a Vector from the Equation, we end up with the Direction of a Vector.
 
+### Mathematical
+
 A Unit Vector is a Vector with
 - a magnitude of `1`
 
-### Mathematical
+### Normalizing a Vector
 
 A Vector of any magnitude can be converted to a Unit Vector by dividing it by its magnitude:
 - `v/||v||`
