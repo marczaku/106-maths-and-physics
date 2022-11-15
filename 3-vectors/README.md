@@ -146,7 +146,7 @@ Add a static Member named `AngleBetweenRad` with two arguments of Type `Vector`.
 ```cs
 Vector a = new Vector(5, 0, 0);
 Vector b = new Vector(3, 3, 0);
-float angle = Vector.AngleBetweenRad(a, b); // 0.5·√2 ≈ 0.7071067811865476
+float angle = Vector.AngleBetweenRad(a, b); // arccos(0.5·√2) ≈ 0.785398163
 ```
 
 Add a static Member named `AngleBetweenDeg` with two arguments of Type `Vector`. The Method returns a `float` which is the angle between both given Vectors in degrees.
@@ -159,7 +159,7 @@ float angle = Vector.AngleBetweenDeg(a, b); // 45
 
 ## 3.12 Cross Product
 
-Add an instance Member named `Dot` with an argument of Type `Vector`. The Method returns a `Vector` which is the result of the Cross Product of the instance Vector with the argument Vector.
+Add an instance Member named `Cross` with an argument of Type `Vector`. The Method returns a `Vector` which is the result of the Cross Product of the instance Vector with the argument Vector.
 
 ```cs
 Vector right = new Vector(1, 0, 0);
