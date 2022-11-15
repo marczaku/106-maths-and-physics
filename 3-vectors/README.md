@@ -48,7 +48,7 @@ Add an instance Method named `MultiplyWith` with an argument of Type `float`. Th
 ```cs
 Vector right = new Vector(1f, 0, 0);
 float movementSpeed = 5f;
-Vector movement = right * movementSpeed; // (5, 0, 0)
+Vector movement = right.MultiplyWith(movementSpeed); // (5, 0, 0)
 ```
 
 ## 3.5 Scalar Division
@@ -58,7 +58,7 @@ Add an instance Method named `DivideBy` with an argument of Type `float`. The Me
 ```cs
 Vector right = new Vector(1f, 0, 0);
 float fps = 50;
-Vector movement = right / fps; // (0.02, 0, 0)
+Vector movement = right.DivideBy(fps); // (0.02, 0, 0)
 ```
 
 ## 3.6 Addition
