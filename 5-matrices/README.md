@@ -91,6 +91,7 @@ glUniformMatrix4fv(transformLocation, 1, true, &matrix.m11);
 ```
 
 - Make sure to change the Path to the new Vertex Shader in your `Material` constructor.
-- Make sure to not update the `vertices` every time before rendering anymore (in the `Mesh`)
+- Make sure to not update the `vertices` every time before rendering anymore in the `Mesh`'s `Render` Method.
+  - Instead, buffer them once in the constructor and then never again.
 - Instead, assign the current `Transform.Matrix` to the `Material`
 - This will require you to pass a `Material` to the `Mesh` constructor and cache it as a field
