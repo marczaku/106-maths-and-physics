@@ -100,7 +100,7 @@ private uint shaderProgram;
 public Material(){/*...*/}
 ```
 
-## Clean Up Code: Mesh
+## Clean Up Code: MeshRenderer
 
 Introduce a `MeshRenderer`-class to handle the vertices and rendering a Mesh to the screen.
 
@@ -137,4 +137,21 @@ private uint _vertexBufferObject;
 /// </summary>
 public Mesh(){/*...*/}
 ```
+
+
+## Clean Up Code: Mesh
+
+## Clean Up Code: Vertex
+
+## Textures
+
+### UV
+
+## Coordinate Spaces
+
+### Model
+
+### View
+
+### Projection
 

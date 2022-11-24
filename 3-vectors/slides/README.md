@@ -296,6 +296,24 @@ For any Magnitude `m`, there is an infinite amount of Vectors with the same Magn
 - If you put all those Vectors to the same point with their Tails inwards
 - They shape a Circle with Radius `m`
 
+### Square Magnitude
+
+Whenever you want to compare Vectors' magnitudes, e.g. to find out, whether one Vector is smaller than another, you can save a lot of Performance by not taking the Square Root:
+
+- Vector a Magnitude: `5`
+- Vector b Magnitude: `4`
+- `||a|| > ||b||`
+
+- Vector a Square Magnitude: `25`
+- Vector b Square Magnitude: `16`
+- `||a||² > ||b||²`
+
+Mathematically, the difference is:
+- Square Magnitude: `x*x + y*y + z*z`
+- Magnitude: `√(x*x + y*y + z*z)`
+
+In other words, we can skip calculating the `√` SquareRoot! That's a huge performance benefit!
+
 ## The Distance Formula
 
 We have enough Knowledge now to start deducting our first own, very useful Vector Formula!

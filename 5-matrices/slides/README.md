@@ -150,3 +150,12 @@ Rows of a Matrix: Basis Vectors of a Coordinate Space
 
 ### Orthogonal Transformation
 - Base Vectors are orthonormal basis
+
+### Rigidbody Transformation
+- changes location and orientation, but not shape
+
+## Determinant
+
+## Inverse
+
+## Translation: 4D
