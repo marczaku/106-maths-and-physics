@@ -527,3 +527,11 @@ void main()
     TexCoord = vec2(gl_Position.x, gl_Position.y);
 }
 ```
+
+### Texture Filters
+
+#### Nearest
+
+#### Linear
+
+#### MipMaps
