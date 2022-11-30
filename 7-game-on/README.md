@@ -11,6 +11,52 @@ glBindVertexArray(_vertexArrayObject);
 glDrawEle...
 ```
 
+## Vector.Cross
+
+We need the Cross-Method that can calculate the Cross Product of two vectors.
+
+Add the following Method to your `Vector` class:
+
+```cs
+public static Vector Cross(Vector vector1, Vector vector2)
+{
+    return new Vector(
+        vector1.y * vector2.z - vector1.z * vector2.y,
+        vector1.z * vector2.x - vector1.x * vector2.z,
+        vector1.x * vector2.y - vector1.y * vector2.x);
+}
+```
+
+Make sure to add a Unit Test. One of the easiest cross products to test is:
+
+```cs
+Vector x = new Vector(1, 0, 0);
+Vector y = new Vector(0, 1, 0);
+Vector z = Vector.Cross(x, y); // (0,0,1)
+```
+
+And while we're at it, let's also test for the opposite:
+
+```cs
+Vector y = new Vector(0, 1, 0);
+Vector x = new Vector(1, 0, 0);
+Vector z_negative = Vector.Cross(y, x); // (0,0,-1)
+```
+
+Make sure to understand the Right-Hand-Rule for Cross Products:
+
+![Cross Product Right-Hand Rule](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Right_hand_rule_cross_product.svg/1024px-Right_hand_rule_cross_product.svg.png)
+
+- Test it for x Cross y
+  - Point the index finger towards x
+  - Point the middle finger towards y
+  - Put the thumb up and see that it points towards you (like the z-axis in OpenGL)
+- Test it for y Cross x
+  - Point the index finger towards y
+  - Point the middle finger towards x
+  - Put the thumb up and see that it points away from you (opposite direction of the z-axis in OpenGL)
+
+
 ## Matrix.FromBaseVectors
 
 You can create a Matrix by providing all three base Vectors (the directions in which `x`,`y` and `z` axes point).
