@@ -218,7 +218,32 @@ Output:
 10000000
 ```
 
+```cs
+float f1 = 2000.58f;
+float f2 = 2000.0f;
+Console.WriteLine(f1 - f2);
+```
+
+Output:
+```
+0.57995605
+```
+
+```cs
+Console.WriteLine(10_001_000f-10_000_000f);
+Console.WriteLine(1_000_001_000f-1_000_000_000f);
+Console.WriteLine(100_000_001_000f-100_000_000_000f);
+```
+
+Output:
+```
+1000
+1024
+0
+```
+
 C# Type: `float` (floating-point number)
+
 
 ### Storing irrational numbers
 
