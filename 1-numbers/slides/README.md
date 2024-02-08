@@ -242,6 +242,27 @@ Output:
 0
 ```
 
+Unreliable when checking equality:
+```c++
+float a = 0.1f;
+float b = 0.3f;
+
+float c = 1f - a; // 0.9f
+float d = 3 * b; // 0.9f
+
+if(c != d){
+   printf("Not the same??");
+}
+```
+
+Therefore:
+
+```c++
+if(abs(c-d) >= 0.00001f){
+   printf("It won't think that it's not the same this time.");
+}
+```
+
 C# Type: `float` (floating-point number)
 
 
